@@ -1,0 +1,30 @@
+<% include _partials/_header %>
+<% include _partials/_nav %>
+<!-- todo: add header -->
+<div class="row">
+	<form class="col s12 m6 offset-m3" action="/location" method="get" role="form">
+		<div class="row">
+			<div class="input-field s12">
+				<label for="name" class="white-text">Name</label>
+				<input type="text" id="name" name="name" class="white-text" />	
+			</div>	
+			<div class="input-field s12">
+				<select name="rating" id="rating" class="white-text">
+					<option value="" disabled selected>Rating</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>	
+			<div class="input-field s12">
+				<label for="review" class="white-text">Review</label>
+				<textarea name="review" id="review" class="materialize-textarea white-text"></textarea>	
+			</div>
+		</div>	
+		<button class="btn green col s10 m6 offset-m3 offset-s1">Add my review</button>
+	</form>	
+</div>
+
+<% include _partials/_footer %>
